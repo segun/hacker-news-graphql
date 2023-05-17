@@ -47,9 +47,12 @@ export function DMCAPage(): JSX.Element {
           </span>
         </a>
         <span style={spanStyle}>
-          , the "<b>DMCA</b>"). The address of Y Combinator's Designated Agent for copyright
-          takedown notices ("
-          <b>Designated Agent</b>") is listed below.
+          , the {`"`}
+          <b>DMCA</b>
+          {`"`}). The address of Y Combinator{`'`}s Designated Agent for copyright takedown notices
+          ({`"`}
+          <b>Designated Agent</b>
+          {`"`}) is listed below.
         </span>
       </p>
       <p className="MsoNormal" style={paragraphStyle}>
@@ -83,8 +86,9 @@ export function DMCAPage(): JSX.Element {
         </li>
         <li className="MsoNormal" style={liStyle}>
           <span style={liSpanStyle}>
-            Contact information for the notifying party (the "<b>Notifying Party</b>"), including
-            name, address, telephone number and e-mail address.
+            Contact information for the notifying party (the {`"`}
+            <b>Notifying Party</b>
+            {`"`}), including name, address, telephone number and e-mail address.
           </span>
         </li>
         <li className="MsoNormal" style={liStyle}>
@@ -149,9 +153,9 @@ export function DMCAPage(): JSX.Element {
         </li>
         <li className="MsoNormal" style={liStyle}>
           <span style={liSpanStyle}>
-            The following statement: "I swear, under penalty of perjury, that I have a good faith
-            belief that the material was removed or disabled as a result of a mistake or
-            misidentification of the material to be removed or disabled."
+            The following statement: {`"`}I swear, under penalty of perjury, that I have a good
+            faith belief that the material was removed or disabled as a result of a mistake or
+            misidentification of the material to be removed or disabled.{`"`}
           </span>
         </li>
         <li className="MsoNormal" style={liStyle}>

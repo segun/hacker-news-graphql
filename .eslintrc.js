@@ -7,7 +7,6 @@ module.exports = {
   ignorePatterns: ['node_modules', '**/__mocks__*', '**/__tests__*', '**/*.spec.*'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: 'tsconfig.json',
     sourceType: 'module',
   },
   plugins: ['react', 'prettier', '@typescript-eslint', 'import'],
@@ -23,7 +22,17 @@ module.exports = {
     'plugin:import/typescript'
   ],
   rules: {
-    '@typescript-eslint/interface-name-prefix': ['warn', { prefixWithI: 'always' }],
+  "@typescript-eslint/naming-convention": [
+    "error",
+    {
+      "selector": "interface",
+      "format": ["PascalCase"],
+      "custom": {
+        "regex": "^I[A-Z]",
+        "match": true
+      }
+    }
+  ],
     'import/prefer-default-export': 'off',
     'import/no-cycle': 'warn',
     'react/prop-types': 'off',
@@ -54,7 +63,14 @@ module.exports = {
     // '@typescript-eslint/member-ordering': 'off',
     // '@typescript-eslint/no-empty-function': 'warn',
     // '@typescript-eslint/no-empty-interface': 'warn',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    'import/no-named-as-default': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'react/no-unescaped-entities': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-explicit-any': 'warn',    
     // '@typescript-eslint/no-misused-new': 'warn',
     // '@typescript-eslint/no-namespace': 'warn',
     // '@typescript-eslint/no-parameter-properties': 'off',
